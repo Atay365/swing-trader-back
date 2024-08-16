@@ -24,3 +24,4 @@ dashboardRouter.get("/:id/dashboard", async (res, req) => {
       .sum({ scoreImpact });
   } catch (error) {}
 });
+export default dashboardRouter;

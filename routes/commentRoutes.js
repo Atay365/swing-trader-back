@@ -45,3 +45,4 @@ commentRouter.post("/newcomment", async (res, req) => {
 //     await knex("comment").where({ id: id });
 //   } catch (error) {}
 // });
+export default commentRouter;

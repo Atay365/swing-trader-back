@@ -27,6 +27,7 @@ pickRouter.get("/:userid/picks", async (res, req) => {
   const userid = req.params.userid;
   try {
     const userPickData = await knex("pick").where({ userid: userid });
+    res.json(userPickData);
   } catch (error) {
     console.error("Error fetching users picks");
     res.status(500).json({ error: "Couldnt fetch data" });
