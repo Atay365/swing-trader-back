@@ -77,3 +77,5 @@ pickRouter.delete("/picks/:id", async (req, res) => {
     res.status(500).json({ error: "Failed to delete" });
   }
 });
+
+export default pickRouter;
